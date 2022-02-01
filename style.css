@@ -1,0 +1,159 @@
+* {
+  background-color: whitesmoke;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 25px;
+  max-width: 1600px;
+  margin: 0.4em;
+  padding: 0;
+  position: table;
+
+}
+body {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+hr {
+  color: black;
+}
+#first-name,
+#last-name,
+#email,
+#address,
+#zip-code {
+  width: 96%;
+  height: 0.5em;
+  border-style: solid;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+.password,
+.password-confirmation,
+.city {
+  width: 96%;
+  height: 0.5em;
+  border-style: solid;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+::placeholder {
+  color: black;
+  padding: 0.5em;
+}
+.check {
+  transform: scale(1.3);
+}
+label {
+  font-size: 0.7em;
+}
+.code-and-number {
+  display: inline-flex;
+}
+#country-dial-code {
+  width: 14em;
+  border-style: solid;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+#number {
+  width: 31.7em;
+  border-style: solid;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+.country {
+  width: 98.5%;
+  height: 2.3em;
+  font-size: 0.8em;
+  padding: 0.1em;
+}
+#required-fields {
+  color: red;
+  font-size: 0.8em;
+}
+.create-button {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5em;
+}
+button {
+  padding: 0.5em;
+  width: 15em;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+.account-information {
+  columns: 2;
+  padding-bottom: 2em;
+}
+h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+h4 {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+h5 {
+  font-size: 0.7em;
+  font-weight: 400;
+}
+#newsletter-signup {
+  font-size: 0.7em;
+}
+button:hover {
+  transition: 0.8s;
+  background-color: seashell;
+  color: red;
+  cursor: pointer;
+}
+.error-popup {
+  height: 1em;
+  width: 98%;
+  color: #f95959;
+  font-size: 0.7em;
+  padding: 0.4em;
+}
+.hidden {
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: whitesmoke;
+  padding: 6em;
+  border-radius: 10px;
+  box-shadow: 0 3em 5em rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal h3 {
+    background-color: whitesmoke;
+}
+.modal h4 {
+    background-color: whitesmoke;
+}
+.modal h5 {
+    background-color: whitesmoke;
+}
+.modal p {
+    background-color: whitesmoke;
+}
+.account-information{
+    background-color: whitesmoke;
+}
+.address-book{
+    background-color: whitesmoke;
+}

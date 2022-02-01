@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaimo test Denys</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    </header>
+    <title>Create new customer account</title>
+    <h1>Create new customer account</h1>
+    <div class="personal-information">
+        <h2>Personal information</h2>
+        <hr>
+        <input id="first-name" type="text" placeholder="First Name" required>
+        <input id="last-name" type="text" placeholder="Last Name" required>
+        <div class="newsletter">
+            <input type="checkbox" class="check" >
+            <label for="check">Sign up for Newsletter</label>
+        </div>
+        <input id="email" type="email" placeholder = "Email" required>
+        <input class="password" type="password" placeholder="Password" required>
+        <input class="password-confirmation" type="password" placeholder="Confirm Password" required>
+        <p class="error-popup hidden">* Passwords do not match</p>
+    </div>
+    <div class = "Address information">
+        <h2>Address information</h2>
+        <hr>
+        <div class="code-and-number">
+            <select id="country-dial-code" required>
+                <option data-countryCode="AR" value="54">Argentina (+54)</option>
+                <option data-countryCode="CU" value="53">Cuba (+53)</option>
+                <option data-countryCode="KG" value="996">Kyrgyzstan (+996)</option>
+                <option data-countryCode="GB" value="44">UK (+44)</option>
+                <option data-countryCode="UA" value="380">Ukraine (+380)</option>
+            </select>
+            <input type="number"  id="number" placeholder="Phone number">
+        </div>
+        <input type="text" id="address" placeholder="Street Address">
+        <select class="country" required>
+                <option value="Argentina">Argentina</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Kingdom">United Kingdom</option>
+        </select>
+        <select class="cities-list" required >
+            <option value="United Kingdom" class="city" >London</option>
+            <option value="United Kingdom" class="city">Manchester</option>
+            <option value="United Kingdom" class="city">Birmingham</option>
+            <option value="United Kingdom" class="city">Blackpool</option>
+            <option value="United Kingdom" class="city">Cardiff</option>
+            <option value="Argentina" class="city">Buenos Aires</option>
+            <option value="Argentina" class="city">Salta</option>
+            <option value="Argentina" class="city">Tucuman</option>
+            <option value="Argentina" class="city">Formosa</option>
+            <option value="Argentina" class="city">Chubut</option>
+            <option value="Cuba"class="city">Havana</option>
+            <option value="Cuba"class="city">Holguin</option>
+            <option value="Cuba"class="city">Bayano</option>
+            <option value="Cuba"class="city">Matanzas</option>
+            <option value="Cuba"class="city">Moa</option>
+            <option value="Kyrgyzstan" class="city">Bishkek</option>
+            <option value="Kyrgyzstan" class="city">Aydarken</option>
+            <option value="Kyrgyzstan" class="city">Karakol</option>
+            <option value="Kyrgyzstan" class="city">Naryn</option>
+            <option value="Kyrgyzstan" class="city">Osh</option>
+            <option value="Ukraine"class="city">Kyiv</option>
+            <option value="Ukraine"class="city">Kharkiv</option>
+            <option value="Ukraine"class="city">Lviv</option>
+            <option value="Ukraine"class="city">Donetsk</option>
+            <option value="Ukraine"class="city">Simferopol</option>
+        </select>
+        <input type="number" id="zip-code" placeholder="Zip/Postal-code" required>
+        <p id="required-fields">All fields are required to be filled</p>
+    </div>
+    <div class="create-button">
+            <button name="button">Create an account</button>
+    </div>
+    <div class="modal hidden">
+        <h3>Account information</h3>
+        <hr>
+        <div class="account-information">
+            <h4>Contact information</h4>
+            <h5 class="account-name">Firstname Lastname</h5>
+            <h5 class="account-email">randomtext@gmail.com</h5>
+            <h4>Newsletters</h5>
+            <p id="newsletter-signup">You are not subscribed to our newsletter</p>
+        </div>
+        <div class="address-book">
+            <h3>Address book</h3>
+            <hr>
+            <h5 class="address-street"> Street </h5>
+            <h5 class="city-index"> Doha,00000 </h5>
+            <h5 class="country"> Country </h5>
+        </div>
+    </div>
+    <footer>
+    </footer> 
+    <script src="script.js"></script>
+</body>
+</html>
